@@ -1,0 +1,21 @@
+dispute_id,predicted_category,confidence,explanation
+D001,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
+D002,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D003,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D004,FRAUD,95.50%,Analysis of the user's description indicates an unauthorized transaction.
+D005,REFUND_PENDING,100.00%,"The transaction status is marked as 'CANCELLED', indicating a refund is due."
+D006,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
+D007,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D008,FRAUD,54.86%,Analysis of the user's description indicates an unauthorized transaction.
+D009,FRAUD,31.53%,Analysis of the user's description indicates an unauthorized transaction.
+D010,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D011,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
+D012,OTHERS,54.13%,Classification is based on the analysis of the user's complaint.
+D013,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
+D014,OTHERS,27.84%,Classification is based on the analysis of the user's complaint.
+D015,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D016,FRAUD,70.13%,Analysis of the user's description indicates an unauthorized transaction.
+D017,REFUND_PENDING,39.94%,Classification is based on the analysis of the user's complaint.
+D018,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
+D019,FAILED_TRANSACTION,100.00%,The transaction status is marked as 'FAILED' in the system logs.
+D020,DUPLICATE_CHARGE,100.00%,System data confirms a corresponding duplicate transaction entry.
