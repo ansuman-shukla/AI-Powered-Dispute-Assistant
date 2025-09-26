@@ -1,0 +1,14 @@
+streamlit
+pandas
+plotly
+langchain
+langchain-experimental
+langchain-google-genai
+langgraph
+typing-extensions
+scikit-learn
+xgboost
+transformers
+torch
+rapidfuzz
+python-dotenv

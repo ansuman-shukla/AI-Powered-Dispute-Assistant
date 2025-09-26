@@ -1,0 +1,21 @@
+dispute_id,customer_id,txn_id,description,txn_type,channel,amount,created_at
+D001,C001,T001,"I got charged twice for the same UPI payment",UPI,Mobile,999,2025-08-01 10:23:11
+D002,C002,T002,"My NEFT failed but money is not refunded",NEFT,Web,1250,2025-08-01 11:55:09
+D003,C003,T003,"Transaction shows failed but money was debited",CARD,POS,500,2025-08-01 12:10:43
+D004,C004,T004,"I did not make this payment. This is fraud.",CARD,Mobile,1200,2025-08-01 13:30:01
+D005,C005,T005,"Still waiting for refund after canceled transaction",CARD,Web,750,2025-08-01 14:02:18
+D006,C006,T006,"Duplicate charge for the same merchant within minutes",CARD,Mobile,1499,2025-08-01 15:11:05
+D007,C007,T007,"UPI transfer failed but account is debited",UPI,Mobile,299,2025-08-01 16:45:30
+D008,C008,T008,"NEFT credited to wrong beneficiary per my statement",NEFT,Web,5400,2025-08-01 17:20:12
+D009,C009,T009,"Chargeback requested as I don't recognize this card txn",CARD,Web,1899,2025-08-02 09:12:44
+D010,C010,T010,"Refund pending for a week after failed POS swipe",CARD,POS,650,2025-08-02 10:05:10
+D011,C011,T011,"Got two UPI debit messages for one QR scan",UPI,QR,220,2025-08-02 10:25:18
+D012,C012,T012,"Payment stuck in pending, not sure if merchant got it",UPI,Mobile,430,2025-08-02 11:01:56
+D013,C013,T013,"EMI card was charged twice this month",CARD,Web,2100,2025-08-02 12:44:39
+D014,C014,T014,"My NEFT is showing processed but beneficiary says not received",NEFT,Web,9800,2025-08-02 13:30:21
+D015,C015,T015,"Got debited after payment failed on gateway",CARD,Web,399,2025-08-02 14:02:07
+D016,C016,T016,"This transaction looks suspicious. I didn't authorize it",CARD,Mobile,5200,2025-08-03 09:31:45
+D017,C017,T017,"Refund for canceled order not received",UPI,Mobile,875,2025-08-03 10:42:11
+D018,C018,T018,"Duplicate UPI transfer to same VPA, minutes apart",UPI,Mobile,1299,2025-08-03 11:15:00
+D019,C019,T019,"NEFT failed but amount not reversed yet",NEFT,Web,25000,2025-08-03 11:55:27
+D020,C020,T020,"Card charged twice at petrol pump",CARD,POS,1800,2025-08-03 12:20:49
