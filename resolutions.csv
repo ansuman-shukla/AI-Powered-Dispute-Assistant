@@ -1,21 +1,21 @@
 dispute_id,suggested_action,justification
-D001,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
-D002,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D003,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D004,Mark as potential fraud,The customer has reported they did not authorize this payment. The case must be flagged for a fraud investigation to protect the account.
-D005,Manual review,"The issue is complex (e.g., a pending transaction or a refund query). An agent needs to investigate the specific transaction details to provide an accurate update."
-D006,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
-D007,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D008,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D009,Mark as potential fraud,The customer has reported they did not authorize this payment. The case must be flagged for a fraud investigation to protect the account.
-D010,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D011,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
-D012,Manual review,"The issue is complex (e.g., a pending transaction or a refund query). An agent needs to investigate the specific transaction details to provide an accurate update."
-D013,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
-D014,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D015,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D016,Mark as potential fraud,The customer has reported they did not authorize this payment. The case must be flagged for a fraud investigation to protect the account.
-D017,Manual review,"The issue is complex (e.g., a pending transaction or a refund query). An agent needs to investigate the specific transaction details to provide an accurate update."
-D018,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
-D019,Escalate to bank,The transaction failed but the customer was debited. The funds are with the banking partner and require a trace to be reversed.
-D020,Auto-refund,A confirmed duplicate transaction was found in the system. Auto-refunding is the fastest way to correct the customer's balance.
+D001,Auto-refund,"Clear evidence of a duplicate transaction allows for a quick, automated resolution."
+D002,Manual review,Manual check needed to confirm debit and process the refund for the failed transaction.
+D003,Manual review,Requires manual check to confirm the debit and initiate a refund.
+D004,Mark as potential fraud,Direct claim of fraud requires immediate flagging and investigation.
+D005,Manual review,Manual check needed to verify the refund status for the cancelled transaction.
+D006,Auto-refund,Unambiguous evidence of a duplicate charge allows for an automated refund.
+D007,Manual review,Manual check needed to verify the debit and process the refund.
+D008,Escalate to bank,"Requires inter-bank systems access to trace the funds, which needs bank involvement."
+D009,Mark as potential fraud,An unrecognized transaction is a strong indicator of fraud and requires investigation.
+D010,Manual review,Manual review needed to investigate the refund delay and expedite it.
+D011,Auto-refund,"Clear evidence of a duplicate transaction allows for a quick, automated refund."
+D012,Ask for more info,Need to wait for the transaction to finalize or ask the customer to check back.
+D013,Auto-refund,Strong evidence of a duplicate charge makes it suitable for an automated refund.
+D014,Escalate to bank,Requires bank-level tracing using the UTR number to confirm credit status.
+D015,Manual review,Manual review needed to verify the debit and initiate the refund process.
+D016,Mark as potential fraud,Direct claim of unauthorized activity requires immediate fraud investigation.
+D017,Ask for more info,Need proof of order cancellation from the merchant to validate the refund claim.
+D018,Auto-refund,"Unambiguous data allows for an efficient, automated refund of the duplicate charge."
+D019,Manual review,Manual check required to ensure the large reversal is processed correctly.
+D020,Auto-refund,Clear evidence of a common duplicate charge scenario; suitable for auto-refund.
