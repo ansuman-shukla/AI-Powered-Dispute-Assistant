@@ -80,6 +80,43 @@ def initialize_agent():
     
     return graph_builder.compile()
 
+
+def normalize_message_content(content) -> str:
+    """Convert message content to a display-friendly string."""
+    if content is None:
+        return ""
+
+    if isinstance(content, str):
+        return content
+
+    if isinstance(content, list):
+        parts = []
+        for part in content:
+            if isinstance(part, str):
+                parts.append(part)
+            elif isinstance(part, dict):
+                text_value = part.get("text") or part.get("content")
+                if isinstance(text_value, str):
+                    parts.append(text_value)
+                else:
+                    parts.append(str(part))
+            elif hasattr(part, "text"):
+                parts.append(str(part.text))
+            else:
+                parts.append(str(part))
+        return "\n".join(parts)
+
+    if isinstance(content, dict):
+        text_value = content.get("text") or content.get("content")
+        if isinstance(text_value, str):
+            return text_value
+        return str(content)
+
+    if hasattr(content, "text"):
+        return str(content.text)
+
+    return str(content)
+
 # Load data
 @st.cache_data
 def load_dispute_data():
@@ -312,8 +349,9 @@ def render_chat_history() -> str:
 
     bubbles = ["<div class='chat-history'>"]
     for message in st.session_state.chat_history:
-        role_class = "user" if message["role"] == "user" else "assistant"
-        safe_content = html.escape(message["content"]).replace("\n", "<br>")
+        role_class = "user" if message.get("role") == "user" else "assistant"
+        raw_content = normalize_message_content(message.get("content", ""))
+        safe_content = html.escape(raw_content).replace("\n", "<br>")
         bubbles.append(
             f"<div class='chat-message {role_class}'><div class='chat-bubble'>{safe_content}</div></div>"
         )
@@ -377,7 +415,8 @@ def chat_interface():
                     response_content = value["messages"][-1].content
             
             # Add assistant response to history
-            st.session_state.chat_history.append({"role": "assistant", "content": response_content})
+            normalized_response = normalize_message_content(response_content)
+            st.session_state.chat_history.append({"role": "assistant", "content": normalized_response})
         
         # Rerun to update the display
         st.rerun()
